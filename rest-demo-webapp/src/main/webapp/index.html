@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+
+function toupper() {
+	location.href = "api/restDemoService/toUpperCase/" + document.getElementById("request").value;
+	return false;
+}
+
+</script>
+</head>
+<body>
+	<form role="form" onSubmit="return toupper();">
+		<input type="text" id="request"/>
+		<button type="submit">GO!</button>
+	</form>
+</body>
+</html>
+
